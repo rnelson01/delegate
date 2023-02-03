@@ -1,4 +1,4 @@
-FROM harness/delegate:`<+pipeline.variables.tag>`
+FROM harness/delegate:'<+pipeline.variables.tag>'
 #22.10.77029.minimal
 USER root
 RUN microdnf update
