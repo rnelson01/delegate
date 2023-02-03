@@ -35,3 +35,8 @@ pipeline:
                     repo: delegate
                     tags:
                       - custom-<+pipeline.sequenceid>
+  variables:
+    - name: tag
+      type: String
+      description: ""
+      value: <+input>
