@@ -49,7 +49,7 @@ pipeline:
                       product_name: bandit
                       product_config_name: default
                       repository_project: <+codebase.repoUrl>
-                      repository_branch: main
+                      repository_branch: <+codebase.branch>
               - step:
                   type: BuildAndPushDockerRegistry
                   name: Build and Push an image to Docker Registry_1
