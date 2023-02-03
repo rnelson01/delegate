@@ -1,7 +1,8 @@
 FROM harness/delegate:22.10.77029.minimal
 USER root
 RUN microdnf update
-RUN microdnf install --nodocs unzip yum-utils yq npm helm
+RUN microdnf install --nodocs unzip yum-utils yq npm
+RUN microdnf install --nodocs yq npm
 RUN npm install -g serverless@v2.50.0 
 RUN yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
 RUN microdnf install -y terraform
