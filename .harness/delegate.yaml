@@ -31,7 +31,7 @@ pipeline:
                   name: Build and Push an image to Docker Registry_1
                   identifier: BuildandPushanimagetoDockerRegistry_1
                   spec:
-                    connectorRef: account.harnessImage
+                    connectorRef: rndockerHub
                     repo: delegate
                     tags:
                       - custom-<+pipeline.sequenceid>
