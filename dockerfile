@@ -1,5 +1,4 @@
-FROM harness/delegate:'<+pipeline.variables.tag>'
-#22.10.77029.minimal
+FROM harness/delegate:22.10.77029.minimal
 USER root
 RUN microdnf update
 RUN microdnf install --nodocs unzip yum-utils
